@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		492B295527BAB6F100FBFABB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293927BAB6F100FBFABB /* Color.swift */; };
-		492B295627BAB6F100FBFABB /* Painter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293A27BAB6F100FBFABB /* Painter.swift */; };
-		492B295727BAB6F100FBFABB /* SpriteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293B27BAB6F100FBFABB /* SpriteGenerator.swift */; };
-		492B295827BAB6F100FBFABB /* HSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293D27BAB6F100FBFABB /* HSV.swift */; };
-		492B295927BAB6F100FBFABB /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293E27BAB6F100FBFABB /* RGB.swift */; };
-		492B295A27BAB6F100FBFABB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B293F27BAB6F100FBFABB /* Common.swift */; };
-		492B295B27BAB6F100FBFABB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294027BAB6F100FBFABB /* Point.swift */; };
-		492B295C27BAB6F100FBFABB /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294127BAB6F100FBFABB /* Template.swift */; };
-		492B295D27BAB6F100FBFABB /* ComposedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294327BAB6F100FBFABB /* ComposedPainter.swift */; };
-		492B295E27BAB6F100FBFABB /* OpacityPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294427BAB6F100FBFABB /* OpacityPainters.swift */; };
-		492B295F27BAB6F100FBFABB /* RandomPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294527BAB6F100FBFABB /* RandomPositionPainter.swift */; };
-		492B296027BAB6F100FBFABB /* RandomChoosedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294627BAB6F100FBFABB /* RandomChoosedPainter.swift */; };
-		492B296127BAB6F100FBFABB /* ColorRedirectPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294727BAB6F100FBFABB /* ColorRedirectPainter.swift */; };
-		492B296227BAB6F100FBFABB /* ValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294927BAB6F100FBFABB /* ValuePainter.swift */; };
-		492B296327BAB6F100FBFABB /* ProvidedValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294A27BAB6F100FBFABB /* ProvidedValuePainter.swift */; };
-		492B296427BAB6F100FBFABB /* ProvidedValueForPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294B27BAB6F100FBFABB /* ProvidedValueForPositionPainter.swift */; };
-		492B296527BAB6F100FBFABB /* OutlinePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294C27BAB6F100FBFABB /* OutlinePainter.swift */; };
-		492B296627BAB6F100FBFABB /* VoidPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294D27BAB6F100FBFABB /* VoidPainter.swift */; };
-		492B296727BAB6F100FBFABB /* LinearGradientPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294E27BAB6F100FBFABB /* LinearGradientPainter.swift */; };
-		492B296827BAB6F100FBFABB /* FilterPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B294F27BAB6F100FBFABB /* FilterPainter.swift */; };
-		492B296927BAB6F100FBFABB /* ColorPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B295027BAB6F100FBFABB /* ColorPainters.swift */; };
-		492B296A27BAB6F100FBFABB /* MirrorPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B295127BAB6F100FBFABB /* MirrorPainter.swift */; };
-		492B296B27BAB6F100FBFABB /* IntensePainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B295227BAB6F100FBFABB /* IntensePainters.swift */; };
-		492B296C27BAB6F100FBFABB /* BrightnessPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B295327BAB6F100FBFABB /* BrightnessPainters.swift */; };
-		492B296D27BAB6F100FBFABB /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B295427BAB6F100FBFABB /* Position.swift */; };
 		492B298A27BAB82A00FBFABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B298627BAB82900FBFABB /* AppDelegate.swift */; };
 		492B298B27BAB82A00FBFABB /* ExampleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B298727BAB82900FBFABB /* ExampleDataSource.swift */; };
 		492B298C27BAB82A00FBFABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B298827BAB82A00FBFABB /* ViewController.swift */; };
 		492B298D27BAB82A00FBFABB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B298927BAB82A00FBFABB /* Helpers.swift */; };
 		492B298F27BAB85F00FBFABB /* SpriteGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492B292F27BAB6DD00FBFABB /* SpriteGeneratorCore.framework */; };
 		492B299027BAB85F00FBFABB /* SpriteGeneratorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 492B292F27BAB6DD00FBFABB /* SpriteGeneratorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		493C1C2C27BC126D00C961CC /* ComposedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1127BC126D00C961CC /* ComposedPainter.swift */; };
+		493C1C2D27BC126D00C961CC /* OpacityPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1227BC126D00C961CC /* OpacityPainters.swift */; };
+		493C1C2E27BC126D00C961CC /* RandomPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */; };
+		493C1C2F27BC126D00C961CC /* RandomChoosedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */; };
+		493C1C3027BC126D00C961CC /* ColorRedirectPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */; };
+		493C1C3127BC126D00C961CC /* ValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1727BC126D00C961CC /* ValuePainter.swift */; };
+		493C1C3227BC126D00C961CC /* ProvidedValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */; };
+		493C1C3327BC126D00C961CC /* ProvidedValueForPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */; };
+		493C1C3427BC126D00C961CC /* OutlinePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1A27BC126D00C961CC /* OutlinePainter.swift */; };
+		493C1C3527BC126D00C961CC /* VoidPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1B27BC126D00C961CC /* VoidPainter.swift */; };
+		493C1C3627BC126D00C961CC /* LinearGradientPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */; };
+		493C1C3727BC126D00C961CC /* FilterPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1D27BC126D00C961CC /* FilterPainter.swift */; };
+		493C1C3827BC126D00C961CC /* ColorPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1E27BC126D00C961CC /* ColorPainters.swift */; };
+		493C1C3927BC126D00C961CC /* MirrorPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1F27BC126D00C961CC /* MirrorPainter.swift */; };
+		493C1C3A27BC126D00C961CC /* IntensePainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2027BC126D00C961CC /* IntensePainters.swift */; };
+		493C1C3B27BC126D00C961CC /* BrightnessPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2127BC126D00C961CC /* BrightnessPainters.swift */; };
+		493C1C3C27BC126D00C961CC /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2227BC126D00C961CC /* Template.swift */; };
+		493C1C3D27BC126D00C961CC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2327BC126D00C961CC /* Point.swift */; };
+		493C1C3E27BC126D00C961CC /* SpriteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2427BC126D00C961CC /* SpriteGenerator.swift */; };
+		493C1C3F27BC126D00C961CC /* Painter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2527BC126D00C961CC /* Painter.swift */; };
+		493C1C4027BC126D00C961CC /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2627BC126D00C961CC /* Position.swift */; };
+		493C1C4127BC126D00C961CC /* HSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2827BC126D00C961CC /* HSV.swift */; };
+		493C1C4227BC126D00C961CC /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2927BC126D00C961CC /* RGB.swift */; };
+		493C1C4327BC126D00C961CC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2A27BC126D00C961CC /* Common.swift */; };
+		493C1C4427BC126D00C961CC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2B27BC126D00C961CC /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,37 +66,37 @@
 
 /* Begin PBXFileReference section */
 		492B292F27BAB6DD00FBFABB /* SpriteGeneratorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteGeneratorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		492B293927BAB6F100FBFABB /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		492B293A27BAB6F100FBFABB /* Painter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Painter.swift; sourceTree = "<group>"; };
-		492B293B27BAB6F100FBFABB /* SpriteGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteGenerator.swift; sourceTree = "<group>"; };
-		492B293D27BAB6F100FBFABB /* HSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSV.swift; sourceTree = "<group>"; };
-		492B293E27BAB6F100FBFABB /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
-		492B293F27BAB6F100FBFABB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		492B294027BAB6F100FBFABB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		492B294127BAB6F100FBFABB /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
-		492B294327BAB6F100FBFABB /* ComposedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedPainter.swift; sourceTree = "<group>"; };
-		492B294427BAB6F100FBFABB /* OpacityPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityPainters.swift; sourceTree = "<group>"; };
-		492B294527BAB6F100FBFABB /* RandomPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionPainter.swift; sourceTree = "<group>"; };
-		492B294627BAB6F100FBFABB /* RandomChoosedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoosedPainter.swift; sourceTree = "<group>"; };
-		492B294727BAB6F100FBFABB /* ColorRedirectPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRedirectPainter.swift; sourceTree = "<group>"; };
-		492B294927BAB6F100FBFABB /* ValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePainter.swift; sourceTree = "<group>"; };
-		492B294A27BAB6F100FBFABB /* ProvidedValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValuePainter.swift; sourceTree = "<group>"; };
-		492B294B27BAB6F100FBFABB /* ProvidedValueForPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValueForPositionPainter.swift; sourceTree = "<group>"; };
-		492B294C27BAB6F100FBFABB /* OutlinePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinePainter.swift; sourceTree = "<group>"; };
-		492B294D27BAB6F100FBFABB /* VoidPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidPainter.swift; sourceTree = "<group>"; };
-		492B294E27BAB6F100FBFABB /* LinearGradientPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientPainter.swift; sourceTree = "<group>"; };
-		492B294F27BAB6F100FBFABB /* FilterPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPainter.swift; sourceTree = "<group>"; };
-		492B295027BAB6F100FBFABB /* ColorPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPainters.swift; sourceTree = "<group>"; };
-		492B295127BAB6F100FBFABB /* MirrorPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorPainter.swift; sourceTree = "<group>"; };
-		492B295227BAB6F100FBFABB /* IntensePainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntensePainters.swift; sourceTree = "<group>"; };
-		492B295327BAB6F100FBFABB /* BrightnessPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessPainters.swift; sourceTree = "<group>"; };
-		492B295427BAB6F100FBFABB /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		492B297227BAB80500FBFABB /* SpriteGeneratorCoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteGeneratorCoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492B298227BAB80A00FBFABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492B298627BAB82900FBFABB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		492B298727BAB82900FBFABB /* ExampleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDataSource.swift; sourceTree = "<group>"; };
 		492B298827BAB82A00FBFABB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		492B298927BAB82A00FBFABB /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		493C1C1127BC126D00C961CC /* ComposedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedPainter.swift; sourceTree = "<group>"; };
+		493C1C1227BC126D00C961CC /* OpacityPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityPainters.swift; sourceTree = "<group>"; };
+		493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionPainter.swift; sourceTree = "<group>"; };
+		493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoosedPainter.swift; sourceTree = "<group>"; };
+		493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRedirectPainter.swift; sourceTree = "<group>"; };
+		493C1C1727BC126D00C961CC /* ValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePainter.swift; sourceTree = "<group>"; };
+		493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValuePainter.swift; sourceTree = "<group>"; };
+		493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValueForPositionPainter.swift; sourceTree = "<group>"; };
+		493C1C1A27BC126D00C961CC /* OutlinePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinePainter.swift; sourceTree = "<group>"; };
+		493C1C1B27BC126D00C961CC /* VoidPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidPainter.swift; sourceTree = "<group>"; };
+		493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientPainter.swift; sourceTree = "<group>"; };
+		493C1C1D27BC126D00C961CC /* FilterPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPainter.swift; sourceTree = "<group>"; };
+		493C1C1E27BC126D00C961CC /* ColorPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPainters.swift; sourceTree = "<group>"; };
+		493C1C1F27BC126D00C961CC /* MirrorPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorPainter.swift; sourceTree = "<group>"; };
+		493C1C2027BC126D00C961CC /* IntensePainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntensePainters.swift; sourceTree = "<group>"; };
+		493C1C2127BC126D00C961CC /* BrightnessPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessPainters.swift; sourceTree = "<group>"; };
+		493C1C2227BC126D00C961CC /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		493C1C2327BC126D00C961CC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		493C1C2427BC126D00C961CC /* SpriteGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteGenerator.swift; sourceTree = "<group>"; };
+		493C1C2527BC126D00C961CC /* Painter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Painter.swift; sourceTree = "<group>"; };
+		493C1C2627BC126D00C961CC /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		493C1C2827BC126D00C961CC /* HSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSV.swift; sourceTree = "<group>"; };
+		493C1C2927BC126D00C961CC /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		493C1C2A27BC126D00C961CC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		493C1C2B27BC126D00C961CC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,9 @@
 		492B292527BAB6DD00FBFABB = {
 			isa = PBXGroup;
 			children = (
-				492B297327BAB80500FBFABB /* SpriteGeneratorCoreExample */,
-				492B293127BAB6DD00FBFABB /* SpriteGeneratorCore */,
+				492B297327BAB80500FBFABB /* Example */,
+				493C1C0F27BC126D00C961CC /* Sources */,
+				493C1C4527BC169A00C961CC /* Tests */,
 				492B293027BAB6DD00FBFABB /* Products */,
 				492B298E27BAB85F00FBFABB /* Frameworks */,
 			);
@@ -137,63 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		492B293127BAB6DD00FBFABB /* SpriteGeneratorCore */ = {
-			isa = PBXGroup;
-			children = (
-				492B293B27BAB6F100FBFABB /* SpriteGenerator.swift */,
-				492B294127BAB6F100FBFABB /* Template.swift */,
-				492B293A27BAB6F100FBFABB /* Painter.swift */,
-				492B293927BAB6F100FBFABB /* Color.swift */,
-				492B295427BAB6F100FBFABB /* Position.swift */,
-				492B294027BAB6F100FBFABB /* Point.swift */,
-				492B294227BAB6F100FBFABB /* Painters */,
-				492B293C27BAB6F100FBFABB /* Helpers */,
-			);
-			path = SpriteGeneratorCore;
-			sourceTree = "<group>";
-		};
-		492B293C27BAB6F100FBFABB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				492B293D27BAB6F100FBFABB /* HSV.swift */,
-				492B293E27BAB6F100FBFABB /* RGB.swift */,
-				492B293F27BAB6F100FBFABB /* Common.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		492B294227BAB6F100FBFABB /* Painters */ = {
-			isa = PBXGroup;
-			children = (
-				492B294327BAB6F100FBFABB /* ComposedPainter.swift */,
-				492B294427BAB6F100FBFABB /* OpacityPainters.swift */,
-				492B294527BAB6F100FBFABB /* RandomPositionPainter.swift */,
-				492B294627BAB6F100FBFABB /* RandomChoosedPainter.swift */,
-				492B294727BAB6F100FBFABB /* ColorRedirectPainter.swift */,
-				492B294C27BAB6F100FBFABB /* OutlinePainter.swift */,
-				492B294D27BAB6F100FBFABB /* VoidPainter.swift */,
-				492B294E27BAB6F100FBFABB /* LinearGradientPainter.swift */,
-				492B294F27BAB6F100FBFABB /* FilterPainter.swift */,
-				492B295027BAB6F100FBFABB /* ColorPainters.swift */,
-				492B295127BAB6F100FBFABB /* MirrorPainter.swift */,
-				492B295227BAB6F100FBFABB /* IntensePainters.swift */,
-				492B295327BAB6F100FBFABB /* BrightnessPainters.swift */,
-				492B294827BAB6F100FBFABB /* Bases */,
-			);
-			path = Painters;
-			sourceTree = "<group>";
-		};
-		492B294827BAB6F100FBFABB /* Bases */ = {
-			isa = PBXGroup;
-			children = (
-				492B294927BAB6F100FBFABB /* ValuePainter.swift */,
-				492B294A27BAB6F100FBFABB /* ProvidedValuePainter.swift */,
-				492B294B27BAB6F100FBFABB /* ProvidedValueForPositionPainter.swift */,
-			);
-			path = Bases;
-			sourceTree = "<group>";
-		};
-		492B297327BAB80500FBFABB /* SpriteGeneratorCoreExample */ = {
+		492B297327BAB80500FBFABB /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				492B298627BAB82900FBFABB /* AppDelegate.swift */,
@@ -202,7 +147,7 @@
 				492B298827BAB82A00FBFABB /* ViewController.swift */,
 				492B298227BAB80A00FBFABB /* Info.plist */,
 			);
-			path = SpriteGeneratorCoreExample;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		492B298E27BAB85F00FBFABB /* Frameworks */ = {
@@ -210,6 +155,69 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493C1C0F27BC126D00C961CC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				493C1C2427BC126D00C961CC /* SpriteGenerator.swift */,
+				493C1C2227BC126D00C961CC /* Template.swift */,
+				493C1C2327BC126D00C961CC /* Point.swift */,
+				493C1C2527BC126D00C961CC /* Painter.swift */,
+				493C1C2627BC126D00C961CC /* Position.swift */,
+				493C1C2B27BC126D00C961CC /* Color.swift */,
+				493C1C1027BC126D00C961CC /* Painters */,
+				493C1C2727BC126D00C961CC /* Helpers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		493C1C1027BC126D00C961CC /* Painters */ = {
+			isa = PBXGroup;
+			children = (
+				493C1C1127BC126D00C961CC /* ComposedPainter.swift */,
+				493C1C1227BC126D00C961CC /* OpacityPainters.swift */,
+				493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */,
+				493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */,
+				493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */,
+				493C1C1627BC126D00C961CC /* Bases */,
+				493C1C1A27BC126D00C961CC /* OutlinePainter.swift */,
+				493C1C1B27BC126D00C961CC /* VoidPainter.swift */,
+				493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */,
+				493C1C1D27BC126D00C961CC /* FilterPainter.swift */,
+				493C1C1E27BC126D00C961CC /* ColorPainters.swift */,
+				493C1C1F27BC126D00C961CC /* MirrorPainter.swift */,
+				493C1C2027BC126D00C961CC /* IntensePainters.swift */,
+				493C1C2127BC126D00C961CC /* BrightnessPainters.swift */,
+			);
+			path = Painters;
+			sourceTree = "<group>";
+		};
+		493C1C1627BC126D00C961CC /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				493C1C1727BC126D00C961CC /* ValuePainter.swift */,
+				493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */,
+				493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		493C1C2727BC126D00C961CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				493C1C2827BC126D00C961CC /* HSV.swift */,
+				493C1C2927BC126D00C961CC /* RGB.swift */,
+				493C1C2A27BC126D00C961CC /* Common.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		493C1C4527BC169A00C961CC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,31 +331,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492B296727BAB6F100FBFABB /* LinearGradientPainter.swift in Sources */,
-				492B295927BAB6F100FBFABB /* RGB.swift in Sources */,
-				492B296227BAB6F100FBFABB /* ValuePainter.swift in Sources */,
-				492B296B27BAB6F100FBFABB /* IntensePainters.swift in Sources */,
-				492B295527BAB6F100FBFABB /* Color.swift in Sources */,
-				492B296627BAB6F100FBFABB /* VoidPainter.swift in Sources */,
-				492B295D27BAB6F100FBFABB /* ComposedPainter.swift in Sources */,
-				492B296327BAB6F100FBFABB /* ProvidedValuePainter.swift in Sources */,
-				492B296927BAB6F100FBFABB /* ColorPainters.swift in Sources */,
-				492B295827BAB6F100FBFABB /* HSV.swift in Sources */,
-				492B295627BAB6F100FBFABB /* Painter.swift in Sources */,
-				492B295F27BAB6F100FBFABB /* RandomPositionPainter.swift in Sources */,
-				492B296027BAB6F100FBFABB /* RandomChoosedPainter.swift in Sources */,
-				492B296827BAB6F100FBFABB /* FilterPainter.swift in Sources */,
-				492B296427BAB6F100FBFABB /* ProvidedValueForPositionPainter.swift in Sources */,
-				492B295B27BAB6F100FBFABB /* Point.swift in Sources */,
-				492B295C27BAB6F100FBFABB /* Template.swift in Sources */,
-				492B295A27BAB6F100FBFABB /* Common.swift in Sources */,
-				492B296C27BAB6F100FBFABB /* BrightnessPainters.swift in Sources */,
-				492B295727BAB6F100FBFABB /* SpriteGenerator.swift in Sources */,
-				492B296527BAB6F100FBFABB /* OutlinePainter.swift in Sources */,
-				492B295E27BAB6F100FBFABB /* OpacityPainters.swift in Sources */,
-				492B296A27BAB6F100FBFABB /* MirrorPainter.swift in Sources */,
-				492B296D27BAB6F100FBFABB /* Position.swift in Sources */,
-				492B296127BAB6F100FBFABB /* ColorRedirectPainter.swift in Sources */,
+				493C1C3027BC126D00C961CC /* ColorRedirectPainter.swift in Sources */,
+				493C1C3E27BC126D00C961CC /* SpriteGenerator.swift in Sources */,
+				493C1C3C27BC126D00C961CC /* Template.swift in Sources */,
+				493C1C3327BC126D00C961CC /* ProvidedValueForPositionPainter.swift in Sources */,
+				493C1C3B27BC126D00C961CC /* BrightnessPainters.swift in Sources */,
+				493C1C4227BC126D00C961CC /* RGB.swift in Sources */,
+				493C1C2C27BC126D00C961CC /* ComposedPainter.swift in Sources */,
+				493C1C3827BC126D00C961CC /* ColorPainters.swift in Sources */,
+				493C1C2E27BC126D00C961CC /* RandomPositionPainter.swift in Sources */,
+				493C1C2F27BC126D00C961CC /* RandomChoosedPainter.swift in Sources */,
+				493C1C3227BC126D00C961CC /* ProvidedValuePainter.swift in Sources */,
+				493C1C3427BC126D00C961CC /* OutlinePainter.swift in Sources */,
+				493C1C3F27BC126D00C961CC /* Painter.swift in Sources */,
+				493C1C3627BC126D00C961CC /* LinearGradientPainter.swift in Sources */,
+				493C1C3527BC126D00C961CC /* VoidPainter.swift in Sources */,
+				493C1C4027BC126D00C961CC /* Position.swift in Sources */,
+				493C1C4327BC126D00C961CC /* Common.swift in Sources */,
+				493C1C2D27BC126D00C961CC /* OpacityPainters.swift in Sources */,
+				493C1C4427BC126D00C961CC /* Color.swift in Sources */,
+				493C1C3127BC126D00C961CC /* ValuePainter.swift in Sources */,
+				493C1C3D27BC126D00C961CC /* Point.swift in Sources */,
+				493C1C3927BC126D00C961CC /* MirrorPainter.swift in Sources */,
+				493C1C4127BC126D00C961CC /* HSV.swift in Sources */,
+				493C1C3A27BC126D00C961CC /* IntensePainters.swift in Sources */,
+				493C1C3727BC126D00C961CC /* FilterPainter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,13 +563,14 @@
 		492B298427BAB80A00FBFABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpriteGeneratorCoreExample/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -583,13 +592,14 @@
 		492B298527BAB80A00FBFABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpriteGeneratorCoreExample/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
