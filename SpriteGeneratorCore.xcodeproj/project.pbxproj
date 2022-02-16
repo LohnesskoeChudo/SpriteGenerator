@@ -38,6 +38,7 @@
 		493C1C4227BC126D00C961CC /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2927BC126D00C961CC /* RGB.swift */; };
 		493C1C4327BC126D00C961CC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2A27BC126D00C961CC /* Common.swift */; };
 		493C1C4427BC126D00C961CC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2B27BC126D00C961CC /* Color.swift */; };
+		493C1C7C27BD349600C961CC /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C7B27BD349600C961CC /* Delegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		493C1C2927BC126D00C961CC /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		493C1C2A27BC126D00C961CC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		493C1C2B27BC126D00C961CC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		493C1C7B27BD349600C961CC /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				493C1C2527BC126D00C961CC /* Painter.swift */,
 				493C1C2627BC126D00C961CC /* Position.swift */,
 				493C1C2B27BC126D00C961CC /* Color.swift */,
+				493C1C7B27BD349600C961CC /* Delegates.swift */,
 				493C1C1027BC126D00C961CC /* Painters */,
 				493C1C2727BC126D00C961CC /* Helpers */,
 			);
@@ -175,12 +178,12 @@
 		493C1C1027BC126D00C961CC /* Painters */ = {
 			isa = PBXGroup;
 			children = (
+				493C1C1627BC126D00C961CC /* Bases */,
 				493C1C1127BC126D00C961CC /* ComposedPainter.swift */,
 				493C1C1227BC126D00C961CC /* OpacityPainters.swift */,
 				493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */,
 				493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */,
 				493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */,
-				493C1C1627BC126D00C961CC /* Bases */,
 				493C1C1A27BC126D00C961CC /* OutlinePainter.swift */,
 				493C1C1B27BC126D00C961CC /* VoidPainter.swift */,
 				493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */,
@@ -341,6 +344,7 @@
 				493C1C3827BC126D00C961CC /* ColorPainters.swift in Sources */,
 				493C1C2E27BC126D00C961CC /* RandomPositionPainter.swift in Sources */,
 				493C1C2F27BC126D00C961CC /* RandomChoosedPainter.swift in Sources */,
+				493C1C7C27BD349600C961CC /* Delegates.swift in Sources */,
 				493C1C3227BC126D00C961CC /* ProvidedValuePainter.swift in Sources */,
 				493C1C3427BC126D00C961CC /* OutlinePainter.swift in Sources */,
 				493C1C3F27BC126D00C961CC /* Painter.swift in Sources */,

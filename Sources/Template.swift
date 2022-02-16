@@ -122,8 +122,8 @@ public func randomIntenseForPosition(rateRange: ClosedRange<Double>, _ wrapee: T
     Template(RandomBrightnessRateForPositionPainter(painter: wrapee.painter, rateRange: rateRange))
 }
 
-public func randomChoosed(_ wrapies: [(Template, probability: Double)]) -> Template {
-    Template(RandomChoosedPainter(paintersWithProbabilities: wrapies.map { ($0.0.painter, $0.probability) }))
+public func randomChoosed(_ wrapies: [(Template, probability: Double)], delegate: RandomChoosedTemplateDelegate? = nil) -> Template {
+    Template(RandomChoosedPainter(paintersWithProbabilities: wrapies.map { ($0.0.painter, $0.probability) }, delegate: delegate))
 }
              
 public func linearGradient(startPoint: Point, endPoint: Point, keyPoints: [(Template, relativeOffset: Double)]) -> Template {
