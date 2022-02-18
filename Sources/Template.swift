@@ -10,6 +10,10 @@ public class Template {
     }
 }
 
+public func colorDelegate(_ delegate: ColorDelegate, _ wrapie: Template) -> Template {
+    Template(ColorDelegatePainter(painter: wrapie.painter, delegate: delegate))
+}
+
 public func color(_ color: Color) -> Template {
     Template(ColorPainter(color: color))
 }

@@ -4,31 +4,30 @@
 
 public struct Color {
     
-    private let rgb: RGB
+    private let hsv: HSV
     public let alpha: Double
 
     public init(red: Double, green: Double, blue: Double, alpha: Double = 1) {
-        rgb = RGB(r: red, g: green, b: blue)
+        hsv = RGB(r: red, g: green, b: blue).hsv
         self.alpha = alpha
     }
     
     public init(hue: Double, saturation: Double, value: Double, alpha: Double = 1) {
-        let hsv = HSV(h: hue, s: saturation, v: value)
-        rgb = hsv.rgb
+        hsv = HSV(h: hue, s: saturation, v: value)
         self.alpha = alpha
     }
     
     public init() {
-        rgb = RGB(r: 1, g: 1, b: 1)
+        hsv = HSV(h: 0, s: 0, v: 0)
         self.alpha = 1
     }
     
     public func getRgb() -> (Double, Double, Double) {
+        let rgb = hsv.rgb
         return (rgb.r, rgb.g, rgb.b)
     }
     
     public func getHsv() -> (Double, Double, Double) {
-        let hsv = rgb.hsv
         return (hsv.h, hsv.s, hsv.v)
     }
 }
@@ -36,11 +35,8 @@ public struct Color {
 extension Color {
     
     static func randomReadable() -> Color {
-        let range = 0.28...0.9
-        let red = Double.random(in: range)
-        let greed = Double.random(in: range)
-        let blue = Double.random(in: range)
-        return Color(red: red, green: greed, blue: blue, alpha: 1)
+        let hue = Double.random(in: 0..<360)
+        return Color(hue: hue, saturation: 0.5, value: 0.9)
     }
     
     func toColor(_ color: Color, percentage: Double) -> Color {

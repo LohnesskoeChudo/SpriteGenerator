@@ -2,10 +2,10 @@
 //  Created by VasiliyKlyotskin
 //
 
-public protocol ColorConsumerDelegate {
+public protocol ColorDelegate {
     func provided(color: Color?, for position: Position)
 }
 
-public protocol RandomChoosedTemplateDelegate: ColorConsumerDelegate {
+public protocol RandomChoosedTemplateDelegate {
     func choosed(index: Int, probability: Double)
 }

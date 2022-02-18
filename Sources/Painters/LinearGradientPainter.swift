@@ -57,7 +57,12 @@ final class LinearGradientPainter: ProvidedValueForPositionPainter<Color> {
     }
     
     override func color(for position: Position) -> Color? {
-        valueFor(position: position)
+        guard colorNeeds(for: position) else { return nil }
+        return valueFor(position: position)
+    }
+    
+    private func colorNeeds(for position: Position) -> Bool {
+        keyPoints.allSatisfy { $0.painter.applied(to: position) }
     }
     
     private func colorPercantageFor(position: Position, keyPoints: NearestPoints) -> Double {
