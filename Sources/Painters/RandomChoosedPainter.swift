@@ -27,8 +27,6 @@ final class RandomChoosedPainter: Painter {
     }
     
     func color(for position: Position) -> Color? {
-        let color = choosedPainter.color(for: position)
-        delegate?.provided(color: color, for: position)
-        return color
+        choosedPainter.color(for: position)
     }
 }
