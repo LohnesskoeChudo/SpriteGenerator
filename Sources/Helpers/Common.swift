@@ -25,3 +25,10 @@ extension FloatingPoint {
         min(1, max(0, self))
     }
 }
+
+extension Double {
+    var randomBoolWithProbability: Bool {
+        let random = Double.random(in: 0..<1)
+        return random < self
+    }
+}

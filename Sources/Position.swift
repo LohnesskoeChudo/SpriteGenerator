@@ -12,6 +12,11 @@ public struct Position: Hashable {
         Point(x: Double(x) + 0.5, y: Double(y) + 0.5)
     }
     
+    var up: Position { Position(x: x, y: y - 1) }
+    var down: Position { Position(x: x, y: y + 1) }
+    var left: Position { Position(x: x - 1, y: y) }
+    var right: Position { Position(x: x + 1, y: y) }
+    
     public init(x: Int, y: Int) {
         self.x = x
         self.y = y

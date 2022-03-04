@@ -29,9 +29,6 @@ final class OutlinePainter: Painter {
     }
 
     private func outlineScheme(for position: Position) -> [Position] {
-        [Position(x: position.x + 1, y: position.y),
-         Position(x: position.x - 1, y: position.y),
-         Position(x: position.x, y: position.y - 1),
-         Position(x: position.x, y: position.y + 1)]
+        [position.right, position.left, position.down, position.up]
     }
 }
