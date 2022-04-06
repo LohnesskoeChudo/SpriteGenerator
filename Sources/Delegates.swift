@@ -7,5 +7,5 @@ public protocol ColorDelegate {
 }
 
 public protocol RandomChoosedTemplateDelegate {
-    func choosed(index: Int, probability: Double)
+    func chosen(index: Int, probability: Double)
 }

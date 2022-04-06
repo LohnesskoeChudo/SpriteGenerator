@@ -2,23 +2,19 @@
 //  Created by VasiliyKlyotskin
 //
 
-final class RandomPositionPainter: ProvidedValueForPositionPainter<Bool> {
-    
+final class RandomPositionPainter: Painter {
+
+    private let painter: Painter
     private let probability: Double
+    private var cache = PositionCache<Bool>()
 
     init(painter: Painter, probability: Double) {
+        self.painter = painter
         self.probability = probability
-        super.init(painter: painter)
     }
     
-    override func provideValue(for position: Position) -> Bool {
-        probability > Double.random(in: 0..<1)
-    }
-    
-    override func color(for position: Position) -> Color? {
-        if valueFor(position: position) {
-            return painter.color(for: position)
-        }
-        return nil
+    func color(for position: Position) -> Color? {
+        let needToPaint = cache.get(with: position) { probability > Double.random(in: 0..<1) }
+        return needToPaint ? painter.color(for: position) : nil
     }
 }

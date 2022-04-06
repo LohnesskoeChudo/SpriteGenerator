@@ -18,11 +18,12 @@ struct NearestPoints {
 }
 
 
-final class LinearGradientPainter: ProvidedValueForPositionPainter<Color> {
+final class LinearGradientPainter: Painter {
     
     private let keyPoints: [LinearGradientKeyPoint]
     private let startPoint: Point
     private let endPoint: Point
+    private var cache = PositionCache<Color>()
     
     private lazy var planePointsForKeyPoints: [Point] = {
         return keyPoints.map {
@@ -44,25 +45,24 @@ final class LinearGradientPainter: ProvidedValueForPositionPainter<Color> {
         self.keyPoints = keyPoints
         self.startPoint = startPoint
         self.endPoint = endPoint
-        super.init()
     }
     
-    override func provideValue(for position: Position) -> Color {
+    func color(for position: Position) -> Color? {
+        guard colorNeeds(for: position) else { return nil }
+        return cache.get(with: position) { calculateColor(for: position) }
+    }
+
+    private func colorNeeds(for position: Position) -> Bool {
+        keyPoints.allSatisfy { $0.painter.applied(to: position) }
+    }
+
+    private func calculateColor(for position: Position) -> Color {
         var keyPoints = getNearestKeyPoints(for: position)
         keyPoints.orderByRelativeOffset()
         let colorPercent = colorPercantageFor(position: position, keyPoints: keyPoints)
         let color = keyPoints.first.painter.color(for: position) ?? Color()
         let targetColor = keyPoints.second.painter.color(for: position) ?? Color()
         return color.toColor(targetColor, percentage: colorPercent)
-    }
-    
-    override func color(for position: Position) -> Color? {
-        guard colorNeeds(for: position) else { return nil }
-        return valueFor(position: position)
-    }
-    
-    private func colorNeeds(for position: Position) -> Bool {
-        keyPoints.allSatisfy { $0.painter.applied(to: position) }
     }
     
     private func colorPercantageFor(position: Position, keyPoints: NearestPoints) -> Double {

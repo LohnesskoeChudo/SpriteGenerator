@@ -267,7 +267,7 @@ final class OutlineDelegate: RandomChoosedTemplateDelegate {
         self.shipTemplate = shipTemplate
     }
     
-    func choosed(index: Int, probability: Double) {
+    func chosen(index: Int, probability: Double) {
         switch index {
         case 0:
             shipTemplate.outlineColor = shipTemplate.commonOutlineColor

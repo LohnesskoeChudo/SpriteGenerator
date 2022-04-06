@@ -16,11 +16,8 @@
 		493C1C2C27BC126D00C961CC /* ComposedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1127BC126D00C961CC /* ComposedPainter.swift */; };
 		493C1C2D27BC126D00C961CC /* OpacityPainters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1227BC126D00C961CC /* OpacityPainters.swift */; };
 		493C1C2E27BC126D00C961CC /* RandomPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */; };
-		493C1C2F27BC126D00C961CC /* RandomChoosedPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */; };
+		493C1C2F27BC126D00C961CC /* RandomChosenPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1427BC126D00C961CC /* RandomChosenPainter.swift */; };
 		493C1C3027BC126D00C961CC /* ColorRedirectPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */; };
-		493C1C3127BC126D00C961CC /* ValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1727BC126D00C961CC /* ValuePainter.swift */; };
-		493C1C3227BC126D00C961CC /* ProvidedValuePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */; };
-		493C1C3327BC126D00C961CC /* ProvidedValueForPositionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */; };
 		493C1C3427BC126D00C961CC /* OutlinePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1A27BC126D00C961CC /* OutlinePainter.swift */; };
 		493C1C3527BC126D00C961CC /* VoidPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1B27BC126D00C961CC /* VoidPainter.swift */; };
 		493C1C3627BC126D00C961CC /* LinearGradientPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */; };
@@ -40,6 +37,8 @@
 		493C1C4427BC126D00C961CC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C2B27BC126D00C961CC /* Color.swift */; };
 		493C1C7C27BD349600C961CC /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C1C7B27BD349600C961CC /* Delegates.swift */; };
 		4948BA2E27BFB14F0071942C /* ColorDelegatePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */; };
+		4984277427FE15AE00DCA787 /* FunctionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277327FE15AE00DCA787 /* FunctionPainter.swift */; };
+		4984277727FE198900DCA787 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277627FE198900DCA787 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,11 +76,8 @@
 		493C1C1127BC126D00C961CC /* ComposedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedPainter.swift; sourceTree = "<group>"; };
 		493C1C1227BC126D00C961CC /* OpacityPainters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityPainters.swift; sourceTree = "<group>"; };
 		493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPositionPainter.swift; sourceTree = "<group>"; };
-		493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChoosedPainter.swift; sourceTree = "<group>"; };
+		493C1C1427BC126D00C961CC /* RandomChosenPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomChosenPainter.swift; sourceTree = "<group>"; };
 		493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRedirectPainter.swift; sourceTree = "<group>"; };
-		493C1C1727BC126D00C961CC /* ValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePainter.swift; sourceTree = "<group>"; };
-		493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValuePainter.swift; sourceTree = "<group>"; };
-		493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedValueForPositionPainter.swift; sourceTree = "<group>"; };
 		493C1C1A27BC126D00C961CC /* OutlinePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinePainter.swift; sourceTree = "<group>"; };
 		493C1C1B27BC126D00C961CC /* VoidPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidPainter.swift; sourceTree = "<group>"; };
 		493C1C1C27BC126D00C961CC /* LinearGradientPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientPainter.swift; sourceTree = "<group>"; };
@@ -101,6 +97,8 @@
 		493C1C2B27BC126D00C961CC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		493C1C7B27BD349600C961CC /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDelegatePainter.swift; sourceTree = "<group>"; };
+		4984277327FE15AE00DCA787 /* FunctionPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionPainter.swift; sourceTree = "<group>"; };
+		4984277627FE198900DCA787 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,11 +178,10 @@
 		493C1C1027BC126D00C961CC /* Painters */ = {
 			isa = PBXGroup;
 			children = (
-				493C1C1627BC126D00C961CC /* Bases */,
 				493C1C1127BC126D00C961CC /* ComposedPainter.swift */,
 				493C1C1227BC126D00C961CC /* OpacityPainters.swift */,
 				493C1C1327BC126D00C961CC /* RandomPositionPainter.swift */,
-				493C1C1427BC126D00C961CC /* RandomChoosedPainter.swift */,
+				493C1C1427BC126D00C961CC /* RandomChosenPainter.swift */,
 				493C1C1527BC126D00C961CC /* ColorRedirectPainter.swift */,
 				493C1C1A27BC126D00C961CC /* OutlinePainter.swift */,
 				493C1C1B27BC126D00C961CC /* VoidPainter.swift */,
@@ -195,18 +192,9 @@
 				493C1C2027BC126D00C961CC /* IntensePainters.swift */,
 				493C1C2127BC126D00C961CC /* BrightnessPainters.swift */,
 				4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */,
+				4984277327FE15AE00DCA787 /* FunctionPainter.swift */,
 			);
 			path = Painters;
-			sourceTree = "<group>";
-		};
-		493C1C1627BC126D00C961CC /* Bases */ = {
-			isa = PBXGroup;
-			children = (
-				493C1C1727BC126D00C961CC /* ValuePainter.swift */,
-				493C1C1827BC126D00C961CC /* ProvidedValuePainter.swift */,
-				493C1C1927BC126D00C961CC /* ProvidedValueForPositionPainter.swift */,
-			);
-			path = Bases;
 			sourceTree = "<group>";
 		};
 		493C1C2727BC126D00C961CC /* Helpers */ = {
@@ -215,6 +203,7 @@
 				493C1C2827BC126D00C961CC /* HSV.swift */,
 				493C1C2927BC126D00C961CC /* RGB.swift */,
 				493C1C2A27BC126D00C961CC /* Common.swift */,
+				4984277627FE198900DCA787 /* Cache.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -340,15 +329,15 @@
 				493C1C3027BC126D00C961CC /* ColorRedirectPainter.swift in Sources */,
 				493C1C3E27BC126D00C961CC /* SpriteGenerator.swift in Sources */,
 				493C1C3C27BC126D00C961CC /* Template.swift in Sources */,
-				493C1C3327BC126D00C961CC /* ProvidedValueForPositionPainter.swift in Sources */,
 				493C1C3B27BC126D00C961CC /* BrightnessPainters.swift in Sources */,
+				4984277427FE15AE00DCA787 /* FunctionPainter.swift in Sources */,
 				493C1C4227BC126D00C961CC /* RGB.swift in Sources */,
+				4984277727FE198900DCA787 /* Cache.swift in Sources */,
 				493C1C2C27BC126D00C961CC /* ComposedPainter.swift in Sources */,
 				493C1C3827BC126D00C961CC /* ColorPainters.swift in Sources */,
 				493C1C2E27BC126D00C961CC /* RandomPositionPainter.swift in Sources */,
-				493C1C2F27BC126D00C961CC /* RandomChoosedPainter.swift in Sources */,
+				493C1C2F27BC126D00C961CC /* RandomChosenPainter.swift in Sources */,
 				493C1C7C27BD349600C961CC /* Delegates.swift in Sources */,
-				493C1C3227BC126D00C961CC /* ProvidedValuePainter.swift in Sources */,
 				493C1C3427BC126D00C961CC /* OutlinePainter.swift in Sources */,
 				493C1C3F27BC126D00C961CC /* Painter.swift in Sources */,
 				493C1C3627BC126D00C961CC /* LinearGradientPainter.swift in Sources */,
@@ -358,7 +347,6 @@
 				493C1C2D27BC126D00C961CC /* OpacityPainters.swift in Sources */,
 				4948BA2E27BFB14F0071942C /* ColorDelegatePainter.swift in Sources */,
 				493C1C4427BC126D00C961CC /* Color.swift in Sources */,
-				493C1C3127BC126D00C961CC /* ValuePainter.swift in Sources */,
 				493C1C3D27BC126D00C961CC /* Point.swift in Sources */,
 				493C1C3927BC126D00C961CC /* MirrorPainter.swift in Sources */,
 				493C1C4127BC126D00C961CC /* HSV.swift in Sources */,

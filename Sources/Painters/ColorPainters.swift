@@ -22,13 +22,11 @@ final class RandomColorPainter: Painter {
 }
 
 
-final class RandomColorForPositionPainter: ProvidedValueForPositionPainter<Color> {
+final class RandomColorForPositionPainter: Painter {
+
+    private var cache = PositionCache<Color>()
     
-    override func provideValue(for position: Position) -> Color {
-        Color.randomReadable()
-    }
-    
-    override func color(for position: Position) -> Color? {
-        valueFor(position: position)
+    func color(for position: Position) -> Color? {
+        return cache.get(with: position) { Color.randomReadable() }
     }
 }

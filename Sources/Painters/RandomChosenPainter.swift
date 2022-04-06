@@ -2,14 +2,22 @@
 //  Created by VasiliyKlyotskin
 //
 
-final class RandomChoosedPainter: Painter {
+final class RandomChosenPainter: Painter {
     
-    private var choosedPainter: Painter
-    var delegate: RandomChoosedTemplateDelegate?
+    private var chosenPainter: Painter?
+    private var delegate: RandomChoosedTemplateDelegate?
     
     init (paintersWithProbabilities: [(Painter, Double)],
           delegate: RandomChoosedTemplateDelegate? = nil) {
         self.delegate = delegate
+        chosenPainter = randomChosenPainter(in: paintersWithProbabilities)
+    }
+    
+    func color(for position: Position) -> Color? {
+        chosenPainter?.color(for: position)
+    }
+
+    private func randomChosenPainter(in paintersWithProbabilities: [(Painter, Double)]) -> Painter? {
         let indexed = paintersWithProbabilities.enumerated()
         let sortedPainters = indexed.sorted(by: { $0.1.1 > $1.1.1 })
         let probabilitiesSum = sortedPainters.map{ $1.1 }.reduce(0, +)
@@ -18,15 +26,10 @@ final class RandomChoosedPainter: Painter {
         for (index, (painter, probability)) in sortedPainters {
             accumulatedProbabilities += probability
             if randomed < accumulatedProbabilities {
-                choosedPainter = painter
-                delegate?.choosed(index: index, probability: probability)
-                return
+                delegate?.chosen(index: index, probability: probability)
+                return painter
             }
         }
-        choosedPainter = sortedPainters.last?.element.0 ?? VoidPainter()
-    }
-    
-    func color(for position: Position) -> Color? {
-        choosedPainter.color(for: position)
+        return nil
     }
 }

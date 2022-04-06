@@ -2,81 +2,101 @@
 //  Created by VasiliyKlyotskin
 //
 
-final class BrightnessPainter: ValuePainter<Double> {
+final class BrightnessPainter: Painter {
+
+    private let painter: Painter
+    private let brightness: Double
+
+    init(painter: Painter, brightness: Double) {
+        self.painter = painter
+        self.brightness = brightness
+    }
     
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(brightness: value)
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(brightness: brightness)
     }
 }
 
 
-final class BrightnessRatePainter: ValuePainter<Double> {
+final class BrightnessRatePainter: Painter {
     
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(brightnessRate: value)
+    private let painter: Painter
+    private let brightnessRate: Double
+
+    init(painter: Painter, brightnessRate: Double) {
+        self.painter = painter
+        self.brightnessRate = brightnessRate
+    }
+
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(brightnessRate: brightnessRate)
     }
 }
 
 
-final class RandomBrightnessPainter: ProvidedValuePainter<Double> {
+final class RandomBrightnessPainter: Painter {
     
+    private let painter: Painter
+    private let brightness: Double
+
     init(painter: Painter, brightnessRange: ClosedRange<Double>) {
-        super.init(painter: painter) { Double.random(in: brightnessRange) }
-    }
-    
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(brightness: value)
-    }
-}
-
-
-final class RandomBrightnessRatePainter: ProvidedValuePainter<Double> {
-    
-    init(painter: Painter, rateRange: ClosedRange<Double>) {
-        super.init(painter: painter) { Double.random(in: rateRange) }
+        self.painter = painter
+        self.brightness = Double.random(in: brightnessRange)
     }
 
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(brightnessRate: value)
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(brightness: brightness)
     }
 }
 
 
-final class RandomBrightnessForPositionPainter: ProvidedValueForPositionPainter<Double> {
+final class RandomBrightnessRatePainter: Painter {
     
+    private let painter: Painter
+    private let brightnessRate: Double
+
+    init(painter: Painter, brightnessRateRange: ClosedRange<Double>) {
+        self.painter = painter
+        self.brightnessRate = Double.random(in: brightnessRateRange)
+    }
+
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(brightnessRate: brightnessRate)
+    }
+}
+
+
+final class RandomBrightnessForPositionPainter: Painter {
+
+    private let painter: Painter
     private let brightnessRange: ClosedRange<Double>
+    private var cache = PositionCache<Double>()
     
     init(painter: Painter, brightnessRange: ClosedRange<Double>) {
+        self.painter = painter
         self.brightnessRange = brightnessRange
-        super.init(painter: painter)
     }
     
-    override func provideValue(for position: Position) -> Double {
-        Double.random(in: brightnessRange)
-    }
-    
-    override func color(for position: Position) -> Color? {
-        let brightness = valueFor(position: position)
+    func color(for position: Position) -> Color? {
+        let brightness = cache.get(with: position) { Double.random(in: brightnessRange) }
         return painter.color(for: position)?.with(brightness: brightness)
     }
 }
 
 
-final class RandomBrightnessRateForPositionPainter: ProvidedValueForPositionPainter<Double> {
+final class RandomBrightnessRateForPositionPainter: Painter {
     
-    private let rateRange: ClosedRange<Double>
-    
-    init(painter: Painter, rateRange: ClosedRange<Double>) {
-        self.rateRange = rateRange
-        super.init(painter: painter)
-    }
-    
-    override func provideValue(for position: Position) -> Double {
-        Double.random(in: rateRange)
+    private let painter: Painter
+    private let brightnessRateRange: ClosedRange<Double>
+    private var cache = PositionCache<Double>()
+
+    init(painter: Painter, brightnessRateRange: ClosedRange<Double>) {
+        self.painter = painter
+        self.brightnessRateRange = brightnessRateRange
     }
 
-    override func color(for position: Position) -> Color? {
-        let rate = valueFor(position: position)
-        return painter.color(for: position)?.with(brightnessRate: rate)
+    func color(for position: Position) -> Color? {
+        let brightnessRate = cache.get(with: position) { Double.random(in: brightnessRateRange) }
+        return painter.color(for: position)?.with(brightnessRate: brightnessRate)
     }
 }

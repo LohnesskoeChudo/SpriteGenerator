@@ -55,11 +55,11 @@ public func randomPosition(probability: Double, _ wrapee: Template) -> Template 
 }
 
 public func opacity(_ opacity: Double, _ wrapee: Template) -> Template {
-    Template(OpacityPainter(painter: wrapee.painter, value: opacity))
+    Template(OpacityPainter(painter: wrapee.painter, opacity: opacity))
 }
 
 public func opacity(rate: Double, _ wrapee: Template) -> Template {
-    Template(OpacityRatePainter(painter: wrapee.painter, value: rate))
+    Template(OpacityRatePainter(painter: wrapee.painter, opacityRate: rate))
 }
 
 public func randomOpacity(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -67,7 +67,7 @@ public func randomOpacity(range: ClosedRange<Double>, _ wrapee: Template) -> Tem
 }
 
 public func randomOpacity(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomOpacityRatePainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomOpacityRatePainter(painter: wrapee.painter, opacityRateRange: rateRange))
 }
 
 public func randomOpacityForPosition(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -75,15 +75,15 @@ public func randomOpacityForPosition(range: ClosedRange<Double>, _ wrapee: Templ
 }
 
 public func randomOpacityForPosition(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomOpacityRateForPositionPainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomOpacityRateForPositionPainter(painter: wrapee.painter, opacityRateRange: rateRange))
 }
 
 public func brightness(_ brightness: Double, _ wrapee: Template) -> Template {
-    Template(BrightnessPainter(painter: wrapee.painter, value: brightness))
+    Template(BrightnessPainter(painter: wrapee.painter, brightness: brightness))
 }
 
 public func brightness(rate: Double, _ wrapee: Template) -> Template {
-    Template(BrightnessRatePainter(painter: wrapee.painter, value: rate))
+    Template(BrightnessRatePainter(painter: wrapee.painter, brightnessRate: rate))
 }
 
 public func randomBrightness(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -91,7 +91,7 @@ public func randomBrightness(range: ClosedRange<Double>, _ wrapee: Template) -> 
 }
 
 public func randomBrightness(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomBrightnessRatePainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomBrightnessRatePainter(painter: wrapee.painter, brightnessRateRange: rateRange))
 }
 
 public func randomBrightnessForPosition(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -99,15 +99,15 @@ public func randomBrightnessForPosition(range: ClosedRange<Double>, _ wrapee: Te
 }
 
 public func randomBrightnessForPosition(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomBrightnessRateForPositionPainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomBrightnessRateForPositionPainter(painter: wrapee.painter, brightnessRateRange: rateRange))
 }
 
 public func intense(_ intense: Double, _ wrapee: Template) -> Template {
-    Template(IntenseRatePainter(painter: wrapee.painter, value: intense))
+    Template(IntensePainter(painter: wrapee.painter, intense: intense))
 }
 
 public func intense(rate: Double, _ wrapee: Template) -> Template {
-    Template(IntenseRatePainter(painter: wrapee.painter, value: rate))
+    Template(IntenseRatePainter(painter: wrapee.painter, intenseRate: rate))
 }
 
 public func randomIntense(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -115,7 +115,7 @@ public func randomIntense(range: ClosedRange<Double>, _ wrapee: Template) -> Tem
 }
 
 public func randomIntense(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomIntenseRatePainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomIntenseRatePainter(painter: wrapee.painter, intenseRateRange: rateRange))
 }
 
 public func randomIntenseForPosition(range: ClosedRange<Double>, _ wrapee: Template) -> Template {
@@ -123,11 +123,11 @@ public func randomIntenseForPosition(range: ClosedRange<Double>, _ wrapee: Templ
 }
 
 public func randomIntenseForPosition(rateRange: ClosedRange<Double>, _ wrapee: Template) -> Template {
-    Template(RandomBrightnessRateForPositionPainter(painter: wrapee.painter, rateRange: rateRange))
+    Template(RandomIntenseRateForPositionPainter(painter: wrapee.painter, intenseRateRange: rateRange))
 }
 
 public func randomChoosed(_ wrapies: [(Template, probability: Double)], delegate: RandomChoosedTemplateDelegate? = nil) -> Template {
-    Template(RandomChoosedPainter(paintersWithProbabilities: wrapies.map { ($0.0.painter, $0.probability) }, delegate: delegate))
+    Template(RandomChosenPainter(paintersWithProbabilities: wrapies.map { ($0.0.painter, $0.probability) }, delegate: delegate))
 }
              
 public func linearGradient(startPoint: Point, endPoint: Point, keyPoints: [(Template, relativeOffset: Double)]) -> Template {

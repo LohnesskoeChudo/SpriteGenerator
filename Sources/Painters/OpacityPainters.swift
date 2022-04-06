@@ -2,81 +2,101 @@
 //  Created by VasiliyKlyotskin
 //
 
-final class OpacityPainter: ValuePainter<Double> {
+final class OpacityPainter: Painter {
+
+    private let painter: Painter
+    private let opacity: Double
+
+    init(painter: Painter, opacity: Double) {
+        self.painter = painter
+        self.opacity = opacity
+    }
     
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(alpha: value)
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(alpha: opacity)
     }
 }
 
 
-final class OpacityRatePainter: ValuePainter<Double> {
+final class OpacityRatePainter: Painter {
+
+    private let painter: Painter
+    private let opacityRate: Double
+
+    init(painter: Painter, opacityRate: Double) {
+        self.painter = painter
+        self.opacityRate = opacityRate
+    }
     
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(alphaRate: value)
+    func color(for position: Position) -> Color? {
+        painter.color(for: position)?.with(alphaRate: opacityRate)
     }
 }
 
 
-final class RandomOpacityPainter: ProvidedValuePainter<Double> {
-    
+final class RandomOpacityPainter: Painter {
+
+    private let painter: Painter
+    private let opacity: Double
+
     init(painter: Painter, opacityRange: ClosedRange<Double>) {
-        super.init(painter: painter) { Double.random(in: opacityRange) }
+        self.painter = painter
+        self.opacity = Double.random(in: opacityRange)
     }
     
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(alpha: value)
-    }
-}
-
-
-final class RandomOpacityRatePainter: ProvidedValuePainter<Double> {
-    
-    init(painter: Painter, rateRange: ClosedRange<Double>) {
-        super.init(painter: painter) { Double.random(in: rateRange) }
-    }
-
-    override func color(for position: Position) -> Color? {
-        painter.color(for: position)?.with(alphaRate: value)
-    }
-}
-
-
-final class RandomOpacityForPositionPainter: ProvidedValueForPositionPainter<Double> {
-    
-    private let opacityRange: ClosedRange<Double>
-    
-    init(painter: Painter, opacityRange: ClosedRange<Double>) {
-        self.opacityRange = opacityRange
-        super.init(painter: painter)
-    }
-    
-    override func provideValue(for position: Position) -> Double {
-        Double.random(in: opacityRange)
-    }
-    
-    override func color(for position: Position) -> Color? {
-        let opacity = valueFor(position: position)
+    func color(for position: Position) -> Color? {
         return painter.color(for: position)?.with(alpha: opacity)
     }
 }
 
 
-final class RandomOpacityRateForPositionPainter: ProvidedValueForPositionPainter<Double> {
-    
-    private let rateRange: ClosedRange<Double>
-    
-    init(painter: Painter, rateRange: ClosedRange<Double>) {
-        self.rateRange = rateRange
-        super.init(painter: painter)
-    }
-    
-    override func provideValue(for position: Position) -> Double {
-        Double.random(in: rateRange)
+final class RandomOpacityRatePainter: Painter {
+
+    private let painter: Painter
+    private let opacityRate: Double
+
+    init(painter: Painter, opacityRateRange: ClosedRange<Double>) {
+        self.painter = painter
+        self.opacityRate = Double.random(in: opacityRateRange)
     }
 
-    override func color(for position: Position) -> Color? {
-        let rate = valueFor(position: position)
-        return painter.color(for: position)?.with(alphaRate: rate)
+    func color(for position: Position) -> Color? {
+        return painter.color(for: position)?.with(alphaRate: opacityRate)
+    }
+}
+
+
+final class RandomOpacityForPositionPainter: Painter {
+    
+    private let painter: Painter
+    private let opacityRange: ClosedRange<Double>
+    private var cache = PositionCache<Double>()
+
+    init(painter: Painter, opacityRange: ClosedRange<Double>) {
+        self.painter = painter
+        self.opacityRange = opacityRange
+    }
+
+    func color(for position: Position) -> Color? {
+        let opacity = cache.get(with: position) { Double.random(in: opacityRange) }
+        return painter.color(for: position)?.with(alpha: opacity)
+    }
+}
+
+
+final class RandomOpacityRateForPositionPainter: Painter {
+    
+    private let painter: Painter
+    private let opacityRateRange: ClosedRange<Double>
+    private var cache = PositionCache<Double>()
+
+    init(painter: Painter, opacityRateRange: ClosedRange<Double>) {
+        self.painter = painter
+        self.opacityRateRange = opacityRateRange
+    }
+
+    func color(for position: Position) -> Color? {
+        let opacityRate = cache.get(with: position) { Double.random(in: opacityRateRange) }
+        return painter.color(for: position)?.with(alphaRate: opacityRate)
     }
 }
