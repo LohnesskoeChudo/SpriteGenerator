@@ -126,7 +126,7 @@ public func randomIntenseForPosition(rateRange: ClosedRange<Double>, _ wrapee: T
     Template(RandomIntenseRateForPositionPainter(painter: wrapee.painter, intenseRateRange: rateRange))
 }
 
-public func randomChoosed(_ wrapies: [(Template, probability: Double)], delegate: RandomChoosedTemplateDelegate? = nil) -> Template {
+public func randomChoosed(_ wrapies: [(Template, probability: Double)], delegate: RandomChosenTemplateDelegate? = nil) -> Template {
     Template(RandomChosenPainter(paintersWithProbabilities: wrapies.map { ($0.0.painter, $0.probability) }, delegate: delegate))
 }
              

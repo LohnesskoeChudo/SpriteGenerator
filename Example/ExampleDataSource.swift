@@ -259,7 +259,7 @@ final class ExampleDataSource {
 
 // MARK: Delegates
 
-final class OutlineDelegate: RandomChoosedTemplateDelegate {
+final class OutlineDelegate: RandomChosenTemplateDelegate {
     
     private let shipTemplate: ExampleDataSource
     

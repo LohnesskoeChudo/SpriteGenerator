@@ -5,10 +5,10 @@
 final class RandomChosenPainter: Painter {
     
     private var chosenPainter: Painter?
-    private var delegate: RandomChoosedTemplateDelegate?
+    private var delegate: RandomChosenTemplateDelegate?
     
     init (paintersWithProbabilities: [(Painter, Double)],
-          delegate: RandomChoosedTemplateDelegate? = nil) {
+          delegate: RandomChosenTemplateDelegate? = nil) {
         self.delegate = delegate
         chosenPainter = randomChosenPainter(in: paintersWithProbabilities)
     }
