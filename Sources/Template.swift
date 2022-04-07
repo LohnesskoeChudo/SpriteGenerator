@@ -138,3 +138,7 @@ public func linearGradient(startPoint: Point, endPoint: Point, keyPoints: [(Temp
 public func colorRedirect(from source: Template, to target: Template) -> Template {
     Template(ColorRedirectPainter(source: source.painter, target: target.painter))
 }
+
+public func sepia(_ wrapee: Template) -> Template {
+    Template(SepiaPainter(painter: wrapee.painter))
+}

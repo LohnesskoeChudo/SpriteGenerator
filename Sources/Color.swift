@@ -85,4 +85,12 @@ extension Color {
         let saturation = (s * rate).limitFromZeroToOne
         return Color(hue: h, saturation: saturation, value: v, alpha: alpha)
     }
+
+    func getSepia() -> Color {
+        let (r, g, b) = getRgb()
+        let tr = (0.393*r + 0.769*g + 0.189*b).limitFromZeroToOne
+        let tg = (0.349*r + 0.686*g + 0.168*b).limitFromZeroToOne
+        let tb = (0.272*r + 0.534*g + 0.131*b).limitFromZeroToOne
+        return Color(red: tr, green: tg, blue: tb, alpha: alpha)
+    }
 }

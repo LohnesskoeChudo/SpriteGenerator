@@ -2,8 +2,6 @@
 //  Created by VasiliyKlyotskin on 06.04.2022.
 //
 
-import Foundation
-
 protocol FunctionResultChecker {
     func isIncluded(functionResult: Point, position: Position) -> Bool
 }

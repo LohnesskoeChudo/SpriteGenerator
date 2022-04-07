@@ -39,6 +39,7 @@
 		4948BA2E27BFB14F0071942C /* ColorDelegatePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */; };
 		4984277427FE15AE00DCA787 /* FunctionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277327FE15AE00DCA787 /* FunctionPainter.swift */; };
 		4984277727FE198900DCA787 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277627FE198900DCA787 /* Cache.swift */; };
+		4984277927FEC0C400DCA787 /* SepiaPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277827FEC0C400DCA787 /* SepiaPainter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDelegatePainter.swift; sourceTree = "<group>"; };
 		4984277327FE15AE00DCA787 /* FunctionPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionPainter.swift; sourceTree = "<group>"; };
 		4984277627FE198900DCA787 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		4984277827FEC0C400DCA787 /* SepiaPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaPainter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				493C1C2127BC126D00C961CC /* BrightnessPainters.swift */,
 				4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */,
 				4984277327FE15AE00DCA787 /* FunctionPainter.swift */,
+				4984277827FEC0C400DCA787 /* SepiaPainter.swift */,
 			);
 			path = Painters;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				493C1C2D27BC126D00C961CC /* OpacityPainters.swift in Sources */,
 				4948BA2E27BFB14F0071942C /* ColorDelegatePainter.swift in Sources */,
 				493C1C4427BC126D00C961CC /* Color.swift in Sources */,
+				4984277927FEC0C400DCA787 /* SepiaPainter.swift in Sources */,
 				493C1C3D27BC126D00C961CC /* Point.swift in Sources */,
 				493C1C3927BC126D00C961CC /* MirrorPainter.swift in Sources */,
 				493C1C4127BC126D00C961CC /* HSV.swift in Sources */,
