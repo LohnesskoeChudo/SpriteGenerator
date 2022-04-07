@@ -1,5 +1,5 @@
 //
-//  Created by VasiliyKlyotskin on 06.04.2022.
+//  Created by VasiliyKlyotskin
 //
 
 protocol FunctionResultChecker {

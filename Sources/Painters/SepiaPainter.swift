@@ -1,5 +1,5 @@
 //
-//  Created by VasiliyKlyotskin on 07.04.2022.
+//  Created by VasiliyKlyotskin
 //
 
 final class SepiaPainter: Painter {
