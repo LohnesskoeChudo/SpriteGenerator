@@ -88,9 +88,14 @@ extension Color {
 
     func getSepia() -> Color {
         let (r, g, b) = getRgb()
-        let tr = (0.393*r + 0.769*g + 0.189*b).limitFromZeroToOne
-        let tg = (0.349*r + 0.686*g + 0.168*b).limitFromZeroToOne
-        let tb = (0.272*r + 0.534*g + 0.131*b).limitFromZeroToOne
-        return Color(red: tr, green: tg, blue: tb, alpha: alpha)
+        let sr = (0.393*r + 0.769*g + 0.189*b).limitFromZeroToOne
+        let sg = (0.349*r + 0.686*g + 0.168*b).limitFromZeroToOne
+        let sb = (0.272*r + 0.534*g + 0.131*b).limitFromZeroToOne
+        return Color(red: sr, green: sg, blue: sb, alpha: alpha)
+    }
+
+    func getGrayscale() -> Color {
+        let (_, _, v) = getHsv()
+        return Color(hue: 0, saturation: 0, value: v, alpha: alpha)
     }
 }

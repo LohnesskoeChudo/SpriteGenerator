@@ -40,6 +40,7 @@
 		4984277427FE15AE00DCA787 /* FunctionPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277327FE15AE00DCA787 /* FunctionPainter.swift */; };
 		4984277727FE198900DCA787 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277627FE198900DCA787 /* Cache.swift */; };
 		4984277927FEC0C400DCA787 /* SepiaPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277827FEC0C400DCA787 /* SepiaPainter.swift */; };
+		4984277B27FEC53D00DCA787 /* BlackWhitePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984277A27FEC53D00DCA787 /* BlackWhitePainter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		4984277327FE15AE00DCA787 /* FunctionPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionPainter.swift; sourceTree = "<group>"; };
 		4984277627FE198900DCA787 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		4984277827FEC0C400DCA787 /* SepiaPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaPainter.swift; sourceTree = "<group>"; };
+		4984277A27FEC53D00DCA787 /* BlackWhitePainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackWhitePainter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				4948BA2D27BFB14F0071942C /* ColorDelegatePainter.swift */,
 				4984277327FE15AE00DCA787 /* FunctionPainter.swift */,
 				4984277827FEC0C400DCA787 /* SepiaPainter.swift */,
+				4984277A27FEC53D00DCA787 /* BlackWhitePainter.swift */,
 			);
 			path = Painters;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				493C1C4127BC126D00C961CC /* HSV.swift in Sources */,
 				493C1C3A27BC126D00C961CC /* IntensePainters.swift in Sources */,
 				493C1C3727BC126D00C961CC /* FilterPainter.swift in Sources */,
+				4984277B27FEC53D00DCA787 /* BlackWhitePainter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

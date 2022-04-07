@@ -142,3 +142,7 @@ public func colorRedirect(from source: Template, to target: Template) -> Templat
 public func sepia(_ wrapee: Template) -> Template {
     Template(SepiaPainter(painter: wrapee.painter))
 }
+
+public func blackWhite(_ wrapee: Template) -> Template {
+    Template(BlackWhitePainter(painter: wrapee.painter))
+}
