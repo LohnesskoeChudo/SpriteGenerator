@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpriteGeneratorCore",
+    name: "SpriteGenerator",
     products: [
         .library(
-            name: "SpriteGeneratorCore",
-            targets: ["SpriteGeneratorCore"]),
+            name: "SpriteGenerator",
+            targets: ["SpriteGenerator"]),
     ],
     
     targets: [
         .target(
-            name: "SpriteGeneratorCore",
+            name: "SpriteGenerator",
             dependencies: [],
             path: "Sources/"),
     ]

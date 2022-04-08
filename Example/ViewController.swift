@@ -3,7 +3,7 @@
 //
 
 import UIKit
-import SpriteGeneratorCore
+import SpriteGenerator
 
 class ViewController: UIViewController {
     

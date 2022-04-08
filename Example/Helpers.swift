@@ -2,7 +2,7 @@
 //  Created by VasiliyKlyotskin
 //
 
-import SpriteGeneratorCore
+import SpriteGenerator
 
 final class Table<T> {
     

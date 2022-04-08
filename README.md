@@ -1,4 +1,4 @@
-# SpriteGeneratorCore
+# SpriteGenerator
 
 Use this package to generate nice sprites
 
