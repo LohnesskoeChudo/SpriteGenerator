@@ -5,6 +5,7 @@
 import Foundation
 
 public struct Position: Hashable {
+    
     public let x: Int
     public let y: Int
     

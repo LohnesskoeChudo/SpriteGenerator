@@ -3,6 +3,7 @@
 //
 
 public class Template {
+    
     var painter: Painter
     
     init(_ painter: Painter) {

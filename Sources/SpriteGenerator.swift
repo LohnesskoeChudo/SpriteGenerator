@@ -8,6 +8,7 @@ public protocol ColorOutput {
 }
 
 public final class SpriteGenerator {
+
     private let colorOutput: ColorOutput
 
     public init(colorOutput: ColorOutput) {

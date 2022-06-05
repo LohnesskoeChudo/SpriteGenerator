@@ -5,6 +5,7 @@
 import Foundation
 
 public struct Point {
+    
     let x: Double
     let y: Double
     
