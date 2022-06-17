@@ -4,12 +4,14 @@
 
 import SpriteGenerator
 
-final class ExampleDataSource {
+final class TemplateBuilder {
+
+    typealias Scheme = Table<Int>
+    typealias T = Template
     
-    var colorOutput = Table<Color>()
     var width = 16
     var height = 16
-    
+
     private let scheme = Table(values:
     [[0,0,0,0,0,0,0,0],
      [0,0,0,0,0,0,0,0],
@@ -28,18 +30,7 @@ final class ExampleDataSource {
      [0,0,0,0,0,0,0,0],
      [0,0,0,0,0,0,0,0]])!
     
-
-    func generateColors() {
-        colorOutput = Table(xSize: width, ySize: height, value: Color())
-        let generator = SpriteGenerator(colorOutput: colorOutput)
-        let template = makeTemplate()
-        generator.generate(from: template)
-    }
-    
-    typealias Scheme = Table<Int>
-    typealias T = Template
-
-    private func makeTemplate() -> Template {
+    func buildTemplate() -> Template {
         let outliner = shipOutline()
         let skeleton = skeleton()
         return composed(wrapies: [
@@ -261,9 +252,9 @@ final class ExampleDataSource {
 
 final class OutlineDelegate: RandomChosenTemplateDelegate {
     
-    private let shipTemplate: ExampleDataSource
+    private let shipTemplate: TemplateBuilder
     
-    init(shipTemplate: ExampleDataSource) {
+    init(shipTemplate: TemplateBuilder) {
         self.shipTemplate = shipTemplate
     }
     

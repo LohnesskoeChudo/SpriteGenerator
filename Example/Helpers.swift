@@ -75,18 +75,6 @@ extension Table where T: Equatable {
     }
 }
 
-extension Table: ColorOutput where T == Color {
-    var positionsToOutput: [Position] {
-        positions
-    }
-    
-    func set(color: Color?, for position: Position) {
-        if let color = color {
-            self[position] = color
-        }
-    }
-}
-
 extension Color {
     static var black = Color(red: 0, green: 0, blue: 0, alpha: 1)
     static var red = Color(red: 1, green: 0, blue: 0, alpha: 1)

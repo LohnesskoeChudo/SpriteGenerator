@@ -6,8 +6,9 @@ import UIKit
 import SpriteGenerator
 
 class ViewController: UIViewController {
-    
-    private let exampleDataSource = ExampleDataSource()
+
+    private lazy var generator = SpriteGenerator(colorOutput: self)
+    private let templateBuilder = TemplateBuilder()
     private let pixelSizeInPoints = 10
     private var sprite = UIView()
 
@@ -23,9 +24,10 @@ class ViewController: UIViewController {
         sprite = UIView()
         sprite.backgroundColor = .orange.withAlphaComponent(0.05)
         view.addSubview(sprite)
-        exampleDataSource.generateColors()
-        buildPixels()
-        sprite.frame = CGRect(origin: .zero, size: CGSize(width: exampleDataSource.width * pixelSizeInPoints, height: exampleDataSource.height * pixelSizeInPoints))
+        DispatchQueue.global(qos: .utility).async {
+            self.generator.generate(from: self.templateBuilder.buildTemplate())
+        }
+        sprite.frame = CGRect(origin: .zero, size: CGSize(width: templateBuilder.width * pixelSizeInPoints, height: templateBuilder.height * pixelSizeInPoints))
         sprite.center = view.center
     }
     
@@ -42,16 +44,10 @@ class ViewController: UIViewController {
         buildSprite()
     }
 
-    private func buildPixels() {
-        for position in exampleDataSource.colorOutput.positions {
-            setPixelView(for: position)
-        }
-    }
-    
-    private func setPixelView(for position: Position) {
+    private func setPixelView(for position: Position, color: Color?) {
         let pixelView = UIView()
         sprite.addSubview(pixelView)
-        pixelView.backgroundColor = uiColor(for: exampleDataSource.colorOutput[position])
+        pixelView.backgroundColor = uiColor(for: color)
         pixelView.frame = CGRect(origin: pixelOriginFor(position: position), size: CGSize(width: pixelSizeInPoints, height: pixelSizeInPoints))
     }
     
@@ -63,5 +59,19 @@ class ViewController: UIViewController {
         guard let color = color else { return .clear }
         let ((r, g, b), a) = (color.getRgb(), color.alpha)
         return UIColor(red: round(r*256)/256, green: round(g*256)/256, blue: round(b*256)/256, alpha: a)
+    }
+}
+
+extension ViewController: ColorOutput {
+    var positionsToOutput: [Position] {
+        let w = templateBuilder.width
+        let h = templateBuilder.height
+        return (0..<w).map { w in (0..<h).map { h in Position(x: w, y: h) }}.flatMap {$0}
+    }
+
+    func set(color: Color?, for position: Position) {
+        DispatchQueue.main.async {
+            self.setPixelView(for: position, color: color)
+        }
     }
 }

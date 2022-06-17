@@ -147,3 +147,7 @@ public func sepia(_ wrapee: Template) -> Template {
 public func blackWhite(_ wrapee: Template) -> Template {
     Template(BlackWhitePainter(painter: wrapee.painter))
 }
+
+public func offsetPainter(x: Int, y: Int, _ wrapee: Template) -> Template {
+    Template(OffsetPainter(x: x, y: y, wrapee: wrapee.painter))
+}

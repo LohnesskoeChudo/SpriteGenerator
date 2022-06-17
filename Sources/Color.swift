@@ -19,7 +19,7 @@ public struct Color {
     
     public init() {
         hsv = HSV(h: 0, s: 0, v: 0)
-        self.alpha = 1
+        self.alpha = 0
     }
     
     public func getRgb() -> (Double, Double, Double) {
